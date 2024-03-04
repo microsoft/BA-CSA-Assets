@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataverse.Sdk.Tester", "Dataverse.Sdk.Tester\Dataverse.Sdk.Tester.csproj", "{CBDC5173-7A0D-4B66-BC8F-9DF653F96C01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBDC5173-7A0D-4B66-BC8F-9DF653F96C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDC5173-7A0D-4B66-BC8F-9DF653F96C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDC5173-7A0D-4B66-BC8F-9DF653F96C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDC5173-7A0D-4B66-BC8F-9DF653F96C01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {441383DD-4672-4932-8DD5-244F483C9B77}
+	EndGlobalSection
+EndGlobal
