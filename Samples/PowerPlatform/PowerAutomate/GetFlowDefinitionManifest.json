@@ -1,0 +1,98 @@
+{
+    "body": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "contentVersion": "1.0.0.0",
+        "parameters": {
+            "$connections": {
+                "defaultValue": {},
+                "type": "Object"
+            },
+            "$authentication": {
+                "defaultValue": {},
+                "type": "SecureObject"
+            }
+        },
+        "triggers": {
+            "manual": {
+                "type": "Request",
+                "kind": "Button",
+                "inputs": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "text": {
+                                "title": "ApprovalDueBy",
+                                "type": "string",
+                                "x-ms-dynamically-added": true,
+                                "description": "Please enter your input",
+                                "x-ms-content-hint": "TEXT"
+                            },
+                            "key-button-date": {
+                                "title": "Date",
+                                "type": "string",
+                                "x-ms-dynamically-added": false
+                            }
+                        },
+                        "required": [
+                            "text",
+                            "key-button-date"
+                        ]
+                    },
+                    "headersSchema": {
+                        "x-ms-user-timestamp": {
+                            "title": "Timestamp",
+                            "type": "string",
+                            "x-ms-dynamically-added": false
+                        },
+                        "x-ms-user-name-encoded": {
+                            "title": "User name",
+                            "type": "string",
+                            "format": "byte",
+                            "x-ms-dynamically-added": false
+                        },
+                        "x-ms-user-email-encoded": {
+                            "title": "User email",
+                            "type": "string",
+                            "format": "byte",
+                            "x-ms-dynamically-added": false
+                        }
+                    }
+                }
+            }
+        },
+        "actions": {
+            "Create_an_approval": {
+                "runAfter": {},
+                "limit": {
+                    "timeout": "PT30M"
+                },
+                "metadata": {
+                    "flowSystemMetadata": {
+                        "swaggerOperationId": "CreateAnApproval"
+                    }
+                },
+                "type": "ApiConnection",
+                "inputs": {
+                    "host": {
+                        "connection": {
+                            "name": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$connections']['shared_approvals']['connectionId']"
+                        }
+                    },
+                    "method": "post",
+                    "body": {
+                        "title": "Quote Approval Request due by @{triggerBody()['text']} from @{triggerBody()['key-button-date']}",
+                        "assignedTo": "alyousse@pfecrmonline.onmicrosoft.com",
+                        "details": "This request came on @{triggerOutputs()['headers']['x-ms-user-timestamp']} from @{base64ToString(triggerOutputs()['headers']['x-ms-user-name-encoded'])}. The email address of @{base64ToString(triggerOutputs()['headers']['x-ms-user-name-encoded'])} is @{base64ToString(triggerOutputs()['headers']['x-ms-user-email-encoded'])}",
+                        "enableNotifications": true,
+                        "enableReassignment": true
+                    },
+                    "path": "/types/@{encodeURIComponent('Basic')}",
+                    "authentication": {
+                        "type": "Raw",
+                        "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                    }
+                }
+            }
+        }
+    }
+}
