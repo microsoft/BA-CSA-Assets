@@ -1,20 +1,61 @@
-# Project
+# Summary
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This repository contains public available samples and workshops from Microsoft Customer Success Architects (CSAs). It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
+
+Each directory owner is responsible for the contents within each asset repository. All contents within are to be used for educational purposes only. 
+
+# Sample Directory
+## Azure
+[Check Status of Microsoft Application Insights Purge - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/Azure/ApplicationInsights/CheckPurgeWithUsernamePrompt.ps1)
+
+## Cross Solution
+[Tenant Level Analytics - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/TenantLevelAnalytics)
+[PCF Control using Microsoft Application Insights - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/blob/main/Samples/PCF/AppInsights/index.ts)
+
+## Microsoft Copilot Studio
+[Create a new session and pass variables to establish context - aliyoussefi](https://github.com/aliyoussefi/Samples/tree/main/PowerPlatform/CopilotStudio/CreateNewSessionAndPassGlobalVarsToCopilot)
+
+## Microsoft Dataverse
+[Monitor Dataverse API Availability with Microsoft Application Insights - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/AzureFunction/MonitoringWithApplicationInsights)
+
+[Run Solution Checker on all but the Default Solution - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/Dynamics365/SolutionChecker/Run%20PowerApps%20Checker%20on%20All%20Solutions.ps1)
 
 
 
-As the maintainer of this project, please make a few updates:
+## Microsoft Power Apps
+[Custom Connector using Microsoft Azure Function and Microsoft Application Insights - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/blob/main/Samples/CustomConnector/AppInsights/AfnAndAppInsights.swagger.json)
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+[Model App Monitor Tool Extractor to Microsoft Application Insights - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/ModelApps/MonitorToolExtractor)
 
-## Contributing
+[Model App and Microsoft Clarity web resource - aliyoussefi](https://github.com/aliyoussefi/D365-Monitoring/blob/master/Dynamics365.Monitoring.WebResources/ClarityDemo.js)
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+[Model App and working with Lookup Objects and Ribbon Context - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/Dynamics365/Client/Xrm.LookupObjects.PCP.js)
+
+[Model App and In App Notifications - aliyoussefi](https://github.com/aliyoussefi/Samples/tree/main/Dynamics365/In-AppNotifications)
+
+[Model App and Side Panes - aliyoussefi](https://github.com/aliyoussefi/Samples/tree/main/Dynamics365/SidePanes)
+## Microsoft Power Automate
+[Audit Power Automate changes with Unified Audit Log - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/Auditing/PowerAutomate)
+
+[Use Process Simple to Cancel All Running Flow Runs for a Flow - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/PowerPlatform/PowerShell/ProcessSimple/Cancel%20All%20Running%20Flow%20Runs.ps1)
+
+[Use Process Simple to resubmit]
+## Microsoft Power Pages
+[Microsoft Application Insights snipper - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/PowerAppsPortals/AppInsights)
+## Microsoft Power Platform Governance
+[Audit DLP Policy Changes - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/Auditing/DLP)
+
+[Create App User and Query BAP API - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/PowerPlatform/PowerShell/BAP/CreateAppUserAndQueryBAPWithPowerShell-Public.ps1)
+
+[Install PAC CLI Package using PowerShell - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/PowerPlatform/PowerShell/PacCli/InstallPacCliPackage.ps1)
+
+[Whitelist IP Addresses in Azure Key Vault for Power Platform - aliyoussefi](https://github.com/aliyoussefi/Samples/tree/main/Azure/WhitelistIpAddressForPowerPlatform)
+## Other
+
+
+# Contributing
+
+This project welcomes contributions and suggestions. Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
@@ -26,7 +67,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Trademarks
+# Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
 trademarks or logos is subject to and must follow 
