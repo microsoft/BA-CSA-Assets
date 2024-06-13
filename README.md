@@ -3,13 +3,15 @@
 This repository contains public available samples and workshops from Microsoft Customer Success Architects (CSAs). It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
 
 Each directory owner is responsible for the contents within each asset repository. All contents within are to be used for educational purposes only. 
-
+# Author Directory
+[Laurens Vandendriessche](https://lavandensway.substack.com/)
 # Sample Directory
 ## Azure
 [Check Status of Microsoft Application Insights Purge - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/Azure/ApplicationInsights/CheckPurgeWithUsernamePrompt.ps1)
 
 ## Cross Solution
 [Tenant Level Analytics - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/TenantLevelAnalytics)
+
 [PCF Control using Microsoft Application Insights - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/blob/main/Samples/PCF/AppInsights/index.ts)
 
 ## Microsoft Copilot Studio
