@@ -4,7 +4,11 @@ This repository contains public available samples and workshops from Microsoft C
 
 Each directory owner is responsible for the contents within each asset repository. All contents within are to be used for educational purposes only. 
 # Author Directory
+
 [Laurens Vandendriessche](https://lavandensway.substack.com/)
+
+[Microsoft Power Platform CE Blogs](https://github.com/microsoft-power-platform-ce/blogs)
+
 # Sample Directory
 ## Azure
 [Check Status of Microsoft Application Insights Purge - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/Azure/ApplicationInsights/CheckPurgeWithUsernamePrompt.ps1)
@@ -43,7 +47,7 @@ Each directory owner is responsible for the contents within each asset repositor
 
 [Use Process Simple to resubmit]
 ## Microsoft Power Pages
-[Microsoft Application Insights snipper - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/PowerAppsPortals/AppInsights)
+[Microsoft Application Insights snippet - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/PowerAppsPortals/AppInsights)
 ## Microsoft Power Platform Governance
 [Audit DLP Policy Changes - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/tree/main/Samples/Auditing/DLP)
 
