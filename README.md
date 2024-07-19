@@ -18,6 +18,8 @@ Each directory owner is responsible for the contents within each asset repositor
 
 [PCF Control using Microsoft Application Insights - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/blob/main/Samples/PCF/AppInsights/index.ts)
 
+[DevOps Solution Management YAML Samples - William Tsoi](https://github.com/Contoso-Enterprise/PowerPlatformALM)
+
 ## Microsoft Copilot Studio
 [Create a new session and pass variables to establish context - aliyoussefi](https://github.com/aliyoussefi/Samples/tree/main/PowerPlatform/CopilotStudio/CreateNewSessionAndPassGlobalVarsToCopilot)
 
