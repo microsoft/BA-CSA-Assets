@@ -1,5 +1,5 @@
 # Reliability Assessment - Failure Mode Analysis
-![](well-architected-hub.png)
+![](./img/well-architected-hub.png)
 ## Question: How do you perform failure mode analysis?
 
 Failure mode analysis (FMA) is the practice of identifying potential points of failure within your workload and the associated flows and planning mitigation actions accordingly. At each step of the flow, you identify the blast radius of multiple failure types, which helps you design a new workload or refactor an existing workload to minimize the widespread effect of failures.
@@ -7,9 +7,9 @@ Failure mode analysis (FMA) is the practice of identifying potential points of f
 If you skip FMA altogether or perform an incomplete analysis, your workload is at risk of unpredicted behavior and potential outages caused by suboptimal design.
 
 ### Comments
-This question focuses on the post breakdown of business workflows pertaining to mitigation of potential failures of components within. It will primarily focus on the [RE:03 recommendations](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis).
+*This question focuses on the post breakdown of business workflows pertaining to mitigation of potential failures of components within. It will primarily focus on the [RE:03 recommendations](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis).*
 
-To learn more and get started with Failure Mode Analysis, review the official FMA collection below.
+*To learn more and get started with Failure Mode Analysis, review the official FMA collection below.*
 
 ### References
 [Well-Architected Framework Failure Mode Analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis)
@@ -21,11 +21,11 @@ To learn more and get started with Failure Mode Analysis, review the official FM
 ### **We decompose the workload to identify its components and their relationships.**
 As you move from ideation to design, you need to identify the component types that are required to support your workload. Your workload determines the necessary components that you must plan for.
 #### Comments
-Review the components in a business critical workload to determine the impact of a component malfunctioning or being down. If this is a new implementation, specific services or connectors may not be known. Define traits needed for each component.
+*Review the components in a business critical workload to determine the impact of a component malfunctioning or being down. If this is a new implementation, specific services or connectors may not be known. Define traits needed for each component.*
 
 ![test](https://learn.microsoft.com/en-us/azure/well-architected/reliability/media/failure-mode-analysis/failure-mode-example.png)
 
-***Only check this box if you have performed a FMA for each business critical workload.***
+**Only check this box if you have performed a FMA for each business critical workload.**
 
 ### **We identified all internal and external dependencies.**
 You understand how your workload depends on external dependencies, such as third-party APIs and identity providers. Typical internal dependencies include APIs or secret/key management solutions like Azure Key Vault. Typical external dependencies include authentication solutions, like Microsoft Entra ID, and Power Platform infrastructure.
