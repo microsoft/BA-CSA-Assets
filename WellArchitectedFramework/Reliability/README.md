@@ -18,17 +18,25 @@ Power Platform provides opportunities to build in observability and recovery int
 Each workload that uses any of these pillars should include these capabilities. Each one that doesn't, espicially business critical workloads, could jeoparidze your ability to react quickly to any problems.
 
 ### Dynamics 365
-
+As Power Platform provides opportunities so does Dynamics 365. Native redundancy for failover to a secondary location. 
 
 
 ## The Power Platform Well-Architected Framework Assessment and Readout
 
-### Notes on the Assessment
+### Guidance on the Assessment
+[Guidance on Question 1](./Assessment%20Guidance%2001.md)
 
+[Guidance on Question 2](Assessment%20Guidance%2002.md)
+
+[Guidance on Question 3](Assessment%20Guidance%2003.md)
 ### What to do post assessment
+Store the CSV file and perform another assessment at an agreed upon date. Review the new assessment to the previous to determine trends.
+
+Review the artifacts contained in this repository. Review the self paced trainings below.
 
 ## Checklist and Artifacts
 [Checklist](https://learn.microsoft.com/en-us/power-platform/well-architected/reliability/checklist)
 
-- designing for simplicity and efficiency
-- 
+[Failure Mode Analysis for Mission Critical Applications Template](./docs/Failure%20Mode%20Analysis%20for%20Mission%20Critical%20Applications.docx)
+
+[Business Criticality Template](./docs/Application%20Criticality%20Template.docx)
