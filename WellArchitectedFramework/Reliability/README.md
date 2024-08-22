@@ -24,11 +24,22 @@ As Power Platform provides opportunities so does Dynamics 365. Native redundancy
 ## The Power Platform Well-Architected Framework Assessment and Readout
 
 ### Guidance on the Assessment
-[Guidance on Question 1](./Assessment%20Guidance%2001.md)
+[Guidance on Question 1: How do you keep the workload simple and efficient?](./Assessment%20Guidance%2001-How%20do%20you%20keep%20the%20workload%20simple%20and%20efficient.md)
 
-[Guidance on Question 2](Assessment%20Guidance%2002.md)
+[Guidance on Question 2: How do you identify and rate the workload's flows?](./Assessment%20Guidance%2002-How%20do%20you%20identify%20and%20rate%20the%20workload's%20flows.md)
 
-[Guidance on Question 3](Assessment%20Guidance%2003.md)
+[Guidance on Question 3: How do you perform failure mode analysis?](./Assessment%20Guidance%2003-How%20do%20you%20perform%20failure%20mode%20analysis.md)
+
+[Guidance on Question 4: How do you define reliability targets?](./Assessment%20Guidance%2004-How%20do%20you%20define%20reliability%20targets.md)
+
+[TBD - Guidance on Question 5: How do you strengthen the resiliency of your workload?](./Assessment%20Guidance%2005-How%20do%20you%20strengthen%20the%20resiliency%20of%20your%20workload.md)
+
+[TBD - Guidance on Question 6: How do you implement background jobs?](./Assessment%20Guidance%2006-How%20do%20you%20implement%20background%20jobs.md)
+
+[TBD - Guidance on Question 7: How do you test your resiliency and availability strategies?](./Assessment%20Guidance%2007-How%20do%20you%20test%20your%20resiliency%20and%20availability%20strategies.md)
+
+[TBD - Guidance on Question 8: How do you plan for disaster scenarios?](./Assessment%20Guidance%2008-How%20do%20you%20plan%20for%20disaster%20scenarios.md)
+
 ### What to do post assessment
 Store the CSV file and perform another assessment at an agreed upon date. Review the new assessment to the previous to determine trends.
 
