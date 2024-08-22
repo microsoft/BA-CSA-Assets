@@ -14,6 +14,8 @@ Reliability targets are derived through workshop exercises with business stakeho
 ### References
 [Well-Architected Framework Target Metrics](https://learn.microsoft.com/en-us/azure/well-architected/reliability/metrics)
 
+[Monitor and optimize your Dynamics 365 environments](https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/service-solution-monitor-service-health)
+
 [Official Microsoft Well-Architected Framework Reliability Failure Mode Analysis Collection](https://learn.microsoft.com/en-us/collections/138f02j4p0ge0?&sharingId=37BA9080B82744F0)
 
 [YouTube: Power Platform Well-Architected Framework - Defining a Monitoring Strategy](https://www.youtube.com/watch?v=AvoD66ItJv4)
