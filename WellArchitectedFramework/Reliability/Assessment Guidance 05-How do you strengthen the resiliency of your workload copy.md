@@ -7,7 +7,7 @@ Strengthen the resiliency of your workload by implementing error handling and tr
 ### Comments
 *Business applications tend to interact with multiple services. While we can do our best to ensure uptime, some services may introduce throttles or faults. TO ensure resiliency we must design our systems to determine the type of fault and how to handle.*
 
-*This question will primarily focus on the [RE:04 Background Jobs recommendations](https://learn.microsoft.com/en-us/power-platform/well-architected/reliability/background-jobs).*
+*This question will primarily focus on the [RE:05 Background Jobs recommendations](https://learn.microsoft.com/en-us/power-platform/well-architected/reliability/background-jobs).*
 
 
 ### References
@@ -16,7 +16,7 @@ Strengthen the resiliency of your workload by implementing error handling and tr
 [Azure Well-Architected Framework Developing Background Jobs](https://learn.microsoft.com/en-us/azure/well-architected/reliability/background-jobs)
 ## Question Responses
 
-### **We designed the system to follow the paradigm of loosely coupled services.**
+### [X]  **We designed the system to follow the paradigm of loosely coupled services.**
 Avoid building monolithic applications in your application design. Use loosely coupled services that communicate with each other via well-defined standards to reduce the risk of extensive problems when malfunctions occur in a single component.
 #### Comments
 *Most Power Platform connections to services are controlled by connectors. These represent a loose coupling. If the organization has custom connectors or is connecting to Azure services, while they are also decoupled, it is important to review any connections happening within. This guidance also applies to Dynamics 365 web resources and plug-ins that make calls to external services.*
@@ -36,7 +36,7 @@ Avoid building monolithic applications in your application design. Use loosely c
 [Custom Connector Overview](https://learn.microsoft.com/en-us/connectors/custom-connectors/)
 
 [Saga pattern with Dataverse](https://learn.microsoft.com/en-us/dynamics365/guidance/reference-architectures/saga-pattern-dataverse)
-### **We implement asynchronous communication rather than synchronous communication between components wherever appropriate.**
+### [X]  **We implement asynchronous communication rather than synchronous communication between components wherever appropriate.**
 Asynchronous communication reduces tight coupling of components and prevents data loss, and can also help increase performance.
 #### Comments
 *This has been a long standing recommendation for Dynamics 365 workloads that do not require business logic to be accessed in transaction. Evaluating usage of the async process should consider the stress that the system can be put under. Considerations should be made to establish a publish subscribe pattern with Azure Service Bus and Azure Event Hubs.*
@@ -59,7 +59,7 @@ Asynchronous communication reduces tight coupling of components and prevents dat
 [Dataverse - Write a custom Azure-aware plug-in](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/write-custom-azure-aware-plugin)
 
 [Power Apps - Database transactions](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/scalable-customization-design/database-transactions)
-### **We enable the workload to degrade its service gracefully.**
+### [X]  **We enable the workload to degrade its service gracefully.**
 Sometimes you can't work around a problem, but you can provide reduced functionality. You take the appropriate steps to handle interruptions, either by rejecting new requests or queueing them for later processing. You present the effect of service degradation to the service consumer, for example by showing an error page or by using error response codes. You also publish the component's updated health status in its own health check endpoint.
 #### Comments
 *External services can introduce throttles or can become unresponsive. When interacting with these services, ensure that a proper time to live is set for any call. If this time is not met, then the system should respond with a message or queue for later processing.*
@@ -77,7 +77,7 @@ Sometimes you can't work around a problem, but you can provide reduced functiona
 
 [Dataverse - Use InvalidPluginExecutionException](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/best-practices/business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities)
 
-### **We mitigate intermittent communication failures and congestion.**
+### [X] **We mitigate intermittent communication failures and congestion.**
 To handle transient faults within your application implementation, you implemented the appropriate self-preservation methods.
 #### Comments
 *Communication failures or increased load can cause applications to not work as intended. Building off patterns such as Saga, Retry, Rate Limiting or Queue-Based Load Leveling could help here.*
@@ -92,7 +92,7 @@ To handle transient faults within your application implementation, you implement
 
 [Azure - Rate Limiting pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/rate-limiting-pattern)
 
-### **We have determined if there's a built-in retry mechanism for workload components.**
+### [X] **We have determined if there's a built-in retry mechanism for workload components.**
 Some services you're connecting to might already provide a transient fault handling mechanism. The retry policy it uses is typically tailored to the nature and requirements of the target service. Alternatively, REST interfaces for services might return information that can help you determine whether a retry is appropriate and how long to wait before the next retry attempt. You should use the built-in retry mechanism when one is available, unless you have specific and well-understood requirements that make a different retry behavior more appropriate.
 #### Comments
 Dynamics 365 workflows offer a retry based on the error code sent back to the system. Other services in the Power Platform will need a built mechanism if the service connecting to doesn't retry on behalf.
@@ -107,7 +107,7 @@ Dynamics 365 workflows offer a retry based on the error code sent back to the sy
 
 [Handle Transient Faults](https://learn.microsoft.com/en-us/power-platform/well-architected/reliability/handle-transient-faults)
 
-### We ensure all components of the workload provide insights into their behavior by writing appropriate log statements for later analysis.
+### [X] We ensure all components of the workload provide insights into their behavior by writing appropriate log statements for later analysis.
 Component logs describe actions, decisions, and the reason behind decisions, for example "Stopping sending further requests to back-end-X for the next 5 minutes because X's health endpoint returned state is unhealthy".
 #### Comments
 *Each service a business critical workload interacts with should respond with information about health. If not, this should be added to the Failure Mode Analysis as a risk.*
@@ -123,7 +123,7 @@ Component logs describe actions, decisions, and the reason behind decisions, for
 
 [Dataverse - Service Protection API Limits Errors returned](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits?tabs=sdk#service-protection-api-limit-errors-returned)
 
-### We are avoiding duplicate layers of retry code.
+### [X] We are avoiding duplicate layers of retry code.
 You avoid designs that include cascading retry mechanisms or that implement retry at every stage of an operation that involves a hierarchy of requests, unless you have specific requirements to do so. You don't perform endless retries, and you don't perform an immediate retry more than once.
 #### Comments
 Duplicate retries can cause catastrophic issues if not implemented correctly. Data can be malformed, applications can become crippled. For all retry logic, ensure that it is documented to retry only a minimal amount of time. Alerting should be setup if any retry occurs.

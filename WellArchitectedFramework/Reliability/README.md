@@ -32,9 +32,9 @@ As Power Platform provides opportunities so does Dynamics 365. Native redundancy
 
 [Guidance on Question 4: How do you define reliability targets?](./Assessment%20Guidance%2004-How%20do%20you%20define%20reliability%20targets.md)
 
-[TBD - Guidance on Question 5: How do you strengthen the resiliency of your workload?](./Assessment%20Guidance%2005-How%20do%20you%20strengthen%20the%20resiliency%20of%20your%20workload.md)
+[Guidance on Question 5: How do you strengthen the resiliency of your workload?](./Assessment%20Guidance%2005-How%20do%20you%20strengthen%20the%20resiliency%20of%20your%20workload.md)
 
-[TBD - Guidance on Question 6: How do you implement background jobs?](./Assessment%20Guidance%2006-How%20do%20you%20implement%20background%20jobs.md)
+[Guidance on Question 6: How do you implement background jobs?](./Assessment%20Guidance%2006-How%20do%20you%20implement%20background%20jobs.md)
 
 [TBD - Guidance on Question 7: How do you test your resiliency and availability strategies?](./Assessment%20Guidance%2007-How%20do%20you%20test%20your%20resiliency%20and%20availability%20strategies.md)
 
