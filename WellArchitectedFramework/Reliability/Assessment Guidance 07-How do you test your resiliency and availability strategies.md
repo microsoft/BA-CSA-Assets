@@ -23,6 +23,8 @@ Your technical engineering team is familiar with the concepts of fault injection
 **NOTE - If fault injection and chaos engineering is not part of your plan, do not check this box.**
 
 #### References
+[Principles of Chaos](https://principlesofchaos.org/)
+
 [Power Platform fault injection and chaos engineering guidance](https://learn.microsoft.com/en-us/power-platform/well-architected/reliability/testing-strategy#fault-injection-and-chaos-engineering-guidance)
 
 [Azure Fault injection and chaos engineering guidance](https://learn.microsoft.com/en-us/azure/well-architected/reliability/testing-strategy#fault-injection-and-chaos-engineering-guidance)
@@ -51,7 +53,7 @@ You perform tests in an environment that's as production-like as possible in all
 For each period of planned downtime, when your workload or a part of a workload are offline, you seize the opportunity to run tests in your production environment where possible.
 #### Comments
 *Dataverse offers administrators the ability set a planned maintenance time. Microsoft also plans maintenance during specific time windows. During this downtime, you can attempt to test and understand what an outage may look like.*
-
+![](https://github.com/aliyoussefi/MonitoringPowerPlatform/blob/main/Artifacts/AppInsights/AvailabilityTests/AzureWorldMapDeployed.jpg?raw=true)
 **NOTE - If downtime tests are not feasible or not planned, do not check this box.**
 
 #### References
@@ -60,11 +62,18 @@ For each period of planned downtime, when your workload or a part of a workload 
 [Power Platform Planned maintenance testing](https://learn.microsoft.com/en-us/power-platform/well-architected/reliability/testing-strategy#take-advantage-of-planned-and-unplanned-outages)
 ### [X] **We learn from production incidents.**
 You have a process in place to learn from unplanned service interruptions and degradations. You use interruptions and degradations as input to continuously improve and extend your portfolio of tests.
+#### Comments
+As part of the post-mortem review of service interruptions, take time to ensure testing are created against the now known unplanned interruption. Tag the test in a test plan dedicated for service uptime observability.
+
+#### References
+[What is Azure Test Plans?](https://learn.microsoft.com/en-us/azure/devops/test/overview?view=azure-devops)
 
 ### [X] **We perform testing early in the development process and throughout it.**
 Adopting a shift-left approach to testing in the development cycle enables you to perform small, frequent deployments by having code that's ready to deploy. You don't have to wait on time-intensive testing processes that occur at the end of the cycle. Testing early and throughout the cycle makes the entire development process smoother and more efficient.
 #### Comments
 *Shift-left testing should be done early and often. Designing and executing tests early in the development process can identify bugs and regressions. Dataverse and the Power Platform offer first party and community tools for dev testing.*
+
+![](./img/Shift%20Left%20and%20Right%20Testing.png)
 
 **NOTE - Testing should be done in a repeatable and predictable manner. If tests are not contained in a test suite and plan with outputs for review, do not check this box.**
 
@@ -91,7 +100,7 @@ You performed failure mode analysis on your workload to determine a set of meani
 During chaos experiments, you observe the behavior of critical flows holistically and end to end with the purpose of revealing unforeseen effects and impact.
 #### Comments
 *Application Insights as part of the Azure Monitor suite can help monitor Dataverse environments and Power Platform apps, bots and flows. Each service included in your critical workflows needs to be observable and should correlate based on a workflow execution.*
-
+![](./img/Mointoring%20Tools%20and%20Scenarios.png)
 **NOTE - If you do not monitor end to end transactions and have complete visibility into critical workloads, update the [Application Criticality Template](./docs/Application%20Criticality%20Template.docx) and do not check this box.**
 
 #### References
@@ -107,9 +116,10 @@ During chaos experiments, you observe the behavior of critical flows holisticall
 ### [X] **We routinely perform testing to validate existing thresholds, targets, and assumptions.**
 We routinely perform testing to validate existing thresholds, targets, and assumptions. When a major change occurs in your workload, run regular testing. Perform most testing in testing and staging environments. It's also beneficial to run a subset of tests against the production system.
 #### Comments
-Shift-right testing into nonfunctional testing can provide valuable insights. Baselines can be affirmed, trends can be analyzed and recommendations provided.
+*Shift-right testing into nonfunctional testing can provide valuable insights. Baselines can be affirmed, trends can be analyzed and recommendations provided.*
 
-Testing Dynamics 365 apps and Power Apps using automated test plans is critical to understand thresholds and target metrics are being met. Tools such as Power Apps Test Engine, Test Studio, EasyRepro and Azure Test Plans can assist.
+*Testing Dynamics 365 apps and Power Apps using automated test plans is critical to understand thresholds and target metrics are being met. Tools such as Power Apps Test Engine, Test Studio, EasyRepro and Azure Test Plans can assist.*
+![](./img/PowerApps%20Testing%20Strategy.png)
 
 **NOTE - If nonfunctional testing is not being performed and business targets are not validated do not check this box. Refer to the [FasTrack testing templates for more information](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Customer%20Service/Testing/Strategy/Templates).**
 
