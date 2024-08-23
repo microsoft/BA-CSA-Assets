@@ -40,6 +40,8 @@ As Power Platform provides opportunities so does Dynamics 365. Native redundancy
 
 [TBD - Guidance on Question 8: How do you plan for disaster scenarios?](./Assessment%20Guidance%2008-How%20do%20you%20plan%20for%20disaster%20scenarios.md)
 
+[TBD - Guidance on Question 9: How do you plan to monitor health?](./Assessment%20Guidance%2009-How%20do%20you%20plan%20to%20monitor%20health.md)
+
 ### What to do post assessment
 Store the CSV file and perform another assessment at an agreed upon date. Review the new assessment to the previous to determine trends.
 
