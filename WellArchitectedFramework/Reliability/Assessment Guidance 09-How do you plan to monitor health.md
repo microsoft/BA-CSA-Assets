@@ -1,6 +1,6 @@
-# Reliability Assessment - Disaster Scenarios
+# Reliability Assessment - Monitoring Health
 ![](./img/well-architected-hub.png)
-## Question: How do you plan for disaster scenarios?
+## Question: How do you plan to monitor health?
 
 Background jobs run automatically without the need for user interaction. Background jobs help minimize the load on the application UI, which improves availability and reduces interactive response time.
 
