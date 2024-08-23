@@ -24,6 +24,18 @@ As Power Platform provides opportunities so does Dynamics 365. Native redundancy
 ## The Power Platform Well-Architected Framework Assessment and Readout
 
 ### Guidance on the Assessment
+Each guidance provided is intended to help frame and answer the question. Each question will include comments as will each possible response to the question. The structure will look similar to this:
+
+#### Question: What is your plan for XYZ?
+- Comments
+- Artifacts, Learnings and General References
+#### Question Responses
+- [X] Possible Question Response
+  - Comments
+  - Note detailing how to answer
+  - References
+
+### Reliability Assessment Guidance
 [Guidance on Question 1: How do you keep the workload simple and efficient?](./Assessment%20Guidance%2001-How%20do%20you%20keep%20the%20workload%20simple%20and%20efficient.md)
 
 [Guidance on Question 2: How do you identify and rate the workload's flows?](./Assessment%20Guidance%2002-How%20do%20you%20identify%20and%20rate%20the%20workload's%20flows.md)
@@ -36,7 +48,7 @@ As Power Platform provides opportunities so does Dynamics 365. Native redundancy
 
 [Guidance on Question 6: How do you implement background jobs?](./Assessment%20Guidance%2006-How%20do%20you%20implement%20background%20jobs.md)
 
-[TBD - Guidance on Question 7: How do you test your resiliency and availability strategies?](./Assessment%20Guidance%2007-How%20do%20you%20test%20your%20resiliency%20and%20availability%20strategies.md)
+[Guidance on Question 7: How do you test your resiliency and availability strategies?](./Assessment%20Guidance%2007-How%20do%20you%20test%20your%20resiliency%20and%20availability%20strategies.md)
 
 [TBD - Guidance on Question 8: How do you plan for disaster scenarios?](./Assessment%20Guidance%2008-How%20do%20you%20plan%20for%20disaster%20scenarios.md)
 
