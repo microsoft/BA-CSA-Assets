@@ -2,24 +2,27 @@
 ![](./img/well-architected-hub.png)
 ## Question: How do you plan to monitor health?
 
-Background jobs run automatically without the need for user interaction. Background jobs help minimize the load on the application UI, which improves availability and reduces interactive response time.
+A reliable monitoring and alerting strategy can keep your operations teams informed of your environment's health status and ensure that you meet the established reliability targets for your workload.
 
 ### Comments
 
 
 ## Question Responses
 
-### **We use trigger conditions to reduce the number of unnecessary runs**
-Trigger conditions set up multiple conditions that must be met before a workflow is triggered. Use trigger conditions to streamline your workflows and reduce the number of unnecessary runs.
+### We can monitor each flow of our workload individually and assess its health state.
+Your monitoring strategy targets each flow individually to assess its individual health state. You can assess your flow's health state based on your health model, which is driven by your committed service-level objectives (SLOs) and service-level agreements (SLAs).
 
-### **We have well defined return results for background jobs.**
-Background jobs run asynchronously in a separate process from the UI or the process that invoked the background job. If you require a background task to communicate with the calling task to indicate progress or completion, you must return a well defined and documented status indicator.
+### We ensure our team is familiar with telemetry at various levels.
+Your team understands which metrics, logs, and traces are available across various levels, such as the platform, infrastructure, and application levels.
 
-### **We have evaluated all steps of the background job and decomposed a task into multiple reusable steps.**
-Background tasks can be complex and require multiple tasks to run. Evaluate if you can divide the task into smaller discrete steps or subtasks that multiple consumers can run.
+### We're intentional about our monitoring system design.
+You're intentional about data sources and the retention time, so you can balance comprehensiveness of data with data sovereignty and cost efficiency.
 
-### **We planned background jobs to provide a reliable service for the workload.**
-Create resilient background tasks to provide reliable services for the application. Background tasks need to gracefully handle restarts without corrupting data or introducing inconsistency into the application.
+### We send out alerts when the health of a flow degrades.
+You send alerts to a defined set of operators when the health state of flows decreases. Operators know how to handle the incidents or where to find instructions. You also consider sending proactive notifications when health states improve.
 
-### **We planned background jobs to offer sufficient performance for the workload.**
-Background tasks must offer sufficient performance to ensure that they don't block the application or delay operation when the system is under load.
+### We present the workload and individual flow health in a simple visual to users who have the right permissions.
+You present the health state of the workload and its individual flows by using dashboards that provide the appropriate insights for the individual user. An appropriate visual, for example a colored box or a traffic light, is prominently positioned on the dashboard to provide immediate insight into the current workload state: healthy, degraded, or unhealthy.
+
+### We've taken measures to stay updated on the health of platforms that our workload depends on.
+Incorporate cloud platform monitoring and alerting services, including platform-level health and resource-level health. To mitigate health impacts, the relevant mechanisms and processes utilize these services.
