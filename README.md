@@ -31,7 +31,8 @@ Each directory owner is responsible for the contents within each asset repositor
 
 [Run Solution Checker on all but the Default Solution - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/Dynamics365/SolutionChecker/Run%20PowerApps%20Checker%20on%20All%20Solutions.ps1)
 
-
+## Microsoft Dynamics 365 Finance and Operations
+[Sandbox Storage Reduction - Alessandro Colombini](https://github.com/microsoft/BA-CSA-Assets/tree/main/Samples/Dynamics365/FO/SQL/SandboxStorageReduction)
 
 ## Microsoft Power Apps
 [Custom Connector using Microsoft Azure Function and Microsoft Application Insights - aliyoussefi](https://github.com/aliyoussefi/MonitoringPowerPlatform/blob/main/Samples/CustomConnector/AppInsights/AfnAndAppInsights.swagger.json)
