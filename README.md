@@ -1,11 +1,16 @@
 # Summary
 
-This repository contains public available samples and workshops from Microsoft Customer Success Architects (CSAs). It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
+This repository contains public available samples and workshops from Microsoft Cloud Solution Architects (CSAs). It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
 
 Each directory owner is responsible for the contents within each asset repository. All contents within are to be used for educational purposes only. 
+# Official Service Offerings
+[Power Platform and Dynamics 365 CE Service Offerings](https://pfedynamics.wordpress.com/2023/09/26/power-platform-and-dynamics-365-service-offerings/)
+
+[Dynamics 365 FO Service Offerings](https://pfedynamics.wordpress.com/2024/04/02/dynamics-365-finance-supply-chain-management-scm-service-offerings/)
+
 # Author Directory
 
-[Laurens Vandendriessche](https://lavandensway.substack.com/)
+[Laurens Vandendriessche Substack](https://lavandensway.substack.com/)
 
 [Microsoft Power Platform CE Blogs](https://github.com/microsoft-power-platform-ce/blogs)
 
