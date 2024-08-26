@@ -15,7 +15,7 @@ Some of the quality attributes attested to reliability include:
 ### Power Platform
 Power Platform provides opportunities to build in observability and recovery into each pillar. Power Apps can trigger alerts based on tests or observed patterns. Power Automate has retry mechanisms. Copilot Studio sends telemetry and session information based on conversations.
 
-Each workload that uses any of these pillars should include these capabilities. Each one that doesn't, espicially business critical workloads, could jeoparidze your ability to react quickly to any problems.
+Each workload that uses any of these pillars should include these capabilities. Each one that doesn't, especially business critical workloads, could jeopardize your ability to react quickly to any problems.
 
 ### Dynamics 365
 As Power Platform provides opportunities so does Dynamics 365. Native redundancy for failover to a secondary location. 
@@ -50,9 +50,9 @@ Each guidance provided is intended to help frame and answer the question. Each q
 
 [Guidance on Question 7: How do you test your resiliency and availability strategies?](./Assessment%20Guidance%2007-How%20do%20you%20test%20your%20resiliency%20and%20availability%20strategies.md)
 
-[TBD - Guidance on Question 8: How do you plan for disaster scenarios?](./Assessment%20Guidance%2008-How%20do%20you%20plan%20for%20disaster%20scenarios.md)
+[Guidance on Question 8: How do you plan for disaster scenarios?](./Assessment%20Guidance%2008-How%20do%20you%20plan%20for%20disaster%20scenarios.md)
 
-[TBD - Guidance on Question 9: How do you plan to monitor health?](./Assessment%20Guidance%2009-How%20do%20you%20plan%20to%20monitor%20health.md)
+[Guidance on Question 9: How do you plan to monitor health?](./Assessment%20Guidance%2009-How%20do%20you%20plan%20to%20monitor%20health.md)
 
 ### What to do post assessment
 Store the CSV file and perform another assessment at an agreed upon date. Review the new assessment to the previous to determine trends.
