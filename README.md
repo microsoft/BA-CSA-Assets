@@ -3,6 +3,11 @@
 This repository contains public available samples and workshops from Microsoft Business Applications Cloud Solution Architects (CSAs) as well as other experts in the field. It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
 
 Each directory owner is responsible for the contents within each asset repository. All contents within are to be used for educational purposes only. 
+
+# Have an Idea?
+
+We are always interested and willing to help the community! Please use the Issues tab above to provide feedback on samples, gaps or any questions you have!
+
 # Official Service Offerings
 [Power Platform and Dynamics 365 CE Service Offerings](https://pfedynamics.wordpress.com/2023/09/26/power-platform-and-dynamics-365-service-offerings/)
 
