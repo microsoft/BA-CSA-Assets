@@ -1,6 +1,6 @@
 # Summary
 
-This repository contains public available samples and workshops from Microsoft Cloud Solution Architects (CSAs). It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
+This repository contains public available samples and workshops from Microsoft Business Applications Cloud Solution Architects (CSAs). It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
 
 Each directory owner is responsible for the contents within each asset repository. All contents within are to be used for educational purposes only. 
 # Official Service Offerings
