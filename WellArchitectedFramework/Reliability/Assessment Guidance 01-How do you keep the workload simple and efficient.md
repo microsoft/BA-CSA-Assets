@@ -13,6 +13,9 @@ Striving for reliability and maintainability, you keep the workload's general im
 #### Comments
 *Application architecture and workloads should focus on minimizing complexity and reducing dependencies (shout out to Steve McConnell!). Look for workloads that include complex design spanning geos, clouds, hybrid connections.* 
 
+#### Power Platform Comments
+Power Apps and Power Automate continuously get new features to help streamline operations and make workloads more efficient. Are you reviewing all apps and flows for new functionality that can help make things more concise?
+
 **NOTE - If a plan is not in place to reduce complexity, keep this unchecked.**
 
 
@@ -20,6 +23,8 @@ Striving for reliability and maintainability, you keep the workload's general im
 You have assessed platform-provided offerings and features, so you can offload administration and management tasks to Power Platform and other cloud providers.
 #### Comments
 *Review current administrative and change management processes. How many of these leverage Dynamics or Power Platform based tools? How much of this is still a manual effort?* 
+
+#### Power Platform Comments
 
 **NOTE - Check this box if you feel you have done an assessment and are confident in the latest tools for Power Platform management. For additional assistance, consider [a Microsoft led workshop](https://pfedynamics.wordpress.com/wp-content/uploads/2023/09/activatepowerplatformadminenglish.pdf) or this self paced training.**
 
