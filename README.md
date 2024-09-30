@@ -14,6 +14,16 @@ Each directory owner is responsible for the contents within each asset repositor
 
 [Microsoft Power Platform CE Blogs](https://github.com/microsoft-power-platform-ce/blogs)
 
+# Tool Directory
+## Power Platform
+[XrmToolbox - Flow Ownership Audit - Laurens Vandendriessche/Felix Mora](https://lavandensway.substack.com/p/xrmtoolbox-flow-ownership-audit)
+
+## Dataverse
+[Xrm Core Library - Sean McNellis](https://github.com/seanmcne/XrmCoreLibrary)
+
+## Dynamice 365
+[OrgDbOrgSettings - Sean McNellis](https://github.com/seanmcne/OrgDbOrgSettings)
+
 # Sample Directory
 ## Azure
 [Check Status of Microsoft Application Insights Purge - aliyoussefi](https://github.com/aliyoussefi/Samples/blob/main/Azure/ApplicationInsights/CheckPurgeWithUsernamePrompt.ps1)
