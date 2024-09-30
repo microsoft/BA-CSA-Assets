@@ -1,6 +1,6 @@
 # Summary
 
-This repository contains public available samples and workshops from Microsoft Business Applications Cloud Solution Architects (CSAs). It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
+This repository contains public available samples and workshops from Microsoft Business Applications Cloud Solution Architects (CSAs) as well as other experts in the field. It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
 
 Each directory owner is responsible for the contents within each asset repository. All contents within are to be used for educational purposes only. 
 # Official Service Offerings
@@ -20,6 +20,8 @@ Each directory owner is responsible for the contents within each asset repositor
 
 ## Dataverse
 [Xrm Core Library - Sean McNellis](https://github.com/seanmcne/XrmCoreLibrary)
+
+[Terraform Provider for Power Platform - Industry Solutions Engineering](https://github.com/microsoft/terraform-provider-power-platform/blob/main/DEVELOPER.md)
 
 ## Dynamics 365
 [OrgDbOrgSettings - Sean McNellis](https://github.com/seanmcne/OrgDbOrgSettings)
