@@ -21,7 +21,7 @@ Each directory owner is responsible for the contents within each asset repositor
 ## Dataverse
 [Xrm Core Library - Sean McNellis](https://github.com/seanmcne/XrmCoreLibrary)
 
-## Dynamice 365
+## Dynamics 365
 [OrgDbOrgSettings - Sean McNellis](https://github.com/seanmcne/OrgDbOrgSettings)
 
 # Sample Directory
