@@ -1,0 +1,21 @@
+<fetch top="50">
+  <entity name="flowrun">
+    <attribute name="duration" />
+    <attribute name="endtime" />
+    <attribute name="errorcode" />
+    <attribute name="errormessage" />
+    <attribute name="flowrunid" />
+    <attribute name="name" />
+    <attribute name="resourceid" />
+    <attribute name="starttime" />
+    <attribute name="status" />
+    <attribute name="triggertype" />
+    <attribute name="ttlinseconds" />
+    <attribute name="workflow" />
+    <attribute name="workflowid" />
+    <filter type="and">
+      <condition attribute="status" operator="eq" value="Failed" />
+      <condition attribute="endtime" operator="last-x-hours" value="1" />
+    </filter>
+  </entity>
+</fetch>
