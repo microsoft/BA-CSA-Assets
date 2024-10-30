@@ -1,0 +1,1 @@
+https://ORG.api.crm.dynamics.com/api/data/v9.2/flowruns?$filter=status%20eq%20%27Failed%27%20and%20Microsoft.Dynamics.CRM.LastXHours(PropertyName=@p1,PropertyValue=@p2)&@p1=%27endtime%27&@p2=1
