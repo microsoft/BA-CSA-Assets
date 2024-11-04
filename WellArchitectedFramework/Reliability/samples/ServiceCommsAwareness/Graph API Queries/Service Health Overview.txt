@@ -1,0 +1,8 @@
+Filter to only Dynamics 365 
+https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews?$filter=id eq 'DynamicsCRM'
+
+Filter to only Power Apps
+https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews?$filter=id in 'PowerApps'
+
+Filter to all Power Platform and related workloads including Microsoft Entra
+https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews?$filter=id in ('DynamicsCRM','DynamicsAX','PowerApps','MicrosoftFlow','PowerAppsM365','MicrosoftFlowM365','PowerPlatform','Copilot','PowerBIcom','OrgLiveID')
