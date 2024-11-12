@@ -3,6 +3,14 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Hugo
+.hugo_build.lock
+public
+services/amba-alerts*
+artifacts/*/**
+/.vs
+
+
 # User-specific files
 *.rsuser
 *.suo

@@ -1,0 +1,61 @@
+baseURL = "http://localhost"
+title = "CSA Assets"
+theme = "hugo-geekdoc"
+themesDir = "docs/themes"
+
+
+pluralizeListTitles = false
+
+# Geekdoc required configuration
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = false
+
+# Required if you want to render robots.txt template
+enableRobotsTXT = true
+
+# Needed for mermaid shortcodes
+[markup]
+  [markup.goldmark.renderer]
+    # Needed for mermaid shortcode or when nesting shortcodes (e.g. img within
+    # columns or tabs)
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 9
+
+[taxonomies]
+   tag = "tags"
+
+
+[module]
+  [[module.mounts]]
+    source = 'docs/content'
+    target = 'content'
+  [[module.mounts]]
+    source = 'docs/static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'docs/layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'docs/data'
+    target = 'data'
+  [[module.mounts]]
+    source = 'docs/assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = 'docs/i18n'
+    target = 'i18n'
+  [[module.mounts]]
+    source = 'docs/archetypes'
+    target = 'archetypes'
+  [[module.mounts]]
+    source = 'WellArchitectedFramework'
+    target = 'content'
+    excludeFiles = ['**/_index.json']
+
+[params]
+  geekdocToC = 3
+  geekdocFileTreeSortBy = "title"
+
