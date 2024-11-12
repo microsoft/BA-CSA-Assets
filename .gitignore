@@ -8,6 +8,3 @@
 public
 artifacts/*/**
 /.vs
-*.vs
-*obj
-*bin
