@@ -1,3 +1,12 @@
+---
+title: 05 How do you strengthen the resiliency of your workload?
+weight: 1
+geekdocCollapseSection: true
+#slug: Reliability
+#geekdocHidden: true
+#geekdocHiddenTocTree: true
+geekdocAlign: "left"
+---
 # Reliability Assessment - Strengthen Resiliency
 ![](./img/well-architected-hub.png)
 ## Question: How do you strengthen the resiliency of your workload?

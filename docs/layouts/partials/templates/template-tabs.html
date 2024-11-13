@@ -1,0 +1,69 @@
+{{ $category := .category }}
+{{ $type := .type }}
+{{ $alert_name := .alert.name | replaceRE `[^a-zA-Z0-9-]` "" }}
+{{ $alert_name := printf "%s_%s" $alert_name .alert.guid }}
+{{ $filename := printf "%s.json" $alert_name | printf "%s"}}
+{{ $file := path.Join "services" $category $type "templates/arm" $filename }}
+<div class="gdoc-tabs">
+  <input
+    type="radio"
+    class="gdoc-tabs__control hidden"
+    name="{{ anchorize .alert.name }}"
+    id="{{ anchorize .alert.name }}-0"
+    checked="checked"
+  />
+  <label for="{{ anchorize .alert.name }}-0" class="gdoc-tabs__label">Deploy</label>
+  <div class="gdoc-markdown--nested gdoc-tabs__content">
+    <p>
+      <a href="https://portal.azure.com/#create/Microsoft.Template/uri/{{ absURL $file }}" target="_blank">
+        <img src="https://aka.ms/deploytoazurebutton"/>
+      </a>
+      <a href="https://portal.azure.us/#create/Microsoft.Template/uri/{{ absURL $file }}" target="_blank">
+        <img src="https://aka.ms/deploytoazuregovbutton"/>
+      </a>
+    </p>
+  </div>
+  <input
+    type="radio"
+    class="gdoc-tabs__control hidden"
+    name="{{ anchorize .alert.name }}"
+    id="{{ anchorize .alert.name }}-1"
+  />
+  <label for="{{ anchorize .alert.name }}-1" class="gdoc-tabs__label">
+    ARM
+  </label>
+  <div class="gdoc-markdown--nested gdoc-tabs__content">
+    {{ $data := readFile $file }}
+    {{ highlight $data "json" }}
+  </div>
+  <input
+    type="radio"
+    class="gdoc-tabs__control hidden"
+    name="{{ anchorize .alert.name }}"
+    id="{{ anchorize .alert.name }}-2"
+  />
+  <label for="{{ anchorize .alert.name }}-2" class="gdoc-tabs__label">
+    Bicep
+  </label>
+  <div class="gdoc-markdown--nested gdoc-tabs__content">
+    {{ $filename := printf "%s.bicep" $alert_name | printf "%s"}}
+    {{ $file := path.Join "services" $category $type "templates/bicep" $filename }}
+    {{ $data := readFile $file }}
+    {{ highlight $data "bicep" }}
+  </div>
+  <input
+    type="radio"
+    class="gdoc-tabs__control hidden"
+    name="{{ anchorize .alert.name }}"
+    id="{{ anchorize .alert.name }}-3"
+  />
+  <label for="{{ anchorize .alert.name }}-3" class="gdoc-tabs__label">
+    Policy
+  </label>
+  <div class="gdoc-markdown--nested gdoc-tabs__content">
+    {{ $filename := printf "%s.json" $alert_name | printf "%s"}}
+    {{ $file := path.Join "services" $category $type "templates/policy" $filename }}
+    {{ $data := readFile $file }}
+    {{ highlight $data "json" }}
+  </div>
+</div>

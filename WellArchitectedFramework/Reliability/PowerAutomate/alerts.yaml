@@ -1,0 +1,19 @@
+- name: LongRunningActions
+  description: Long Running Actions
+  type: Metric
+  verified: false
+  visible: false
+  tags:
+  - csa-assets
+  properties:
+    metricName: pa_metrics_longrunningactions
+    metricNamespace: microsoft.insights/components
+    severity: 3
+    windowSize: PT5M
+    evaluationFrequency: PT1M
+    timeAggregation: Average
+    operator: GreaterThan
+    criterionType: StaticThresholdCriterion
+    threshold: 90.0
+    autoMitigate: false
+  guid: ea6a4d59-822f-4fb7-a29d-69e523e95bdb

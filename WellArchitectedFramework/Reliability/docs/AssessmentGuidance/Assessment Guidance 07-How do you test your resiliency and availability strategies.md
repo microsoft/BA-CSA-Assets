@@ -1,3 +1,12 @@
+---
+title: 07 How do you test your resiliency and availability strategies?
+weight: 1
+geekdocCollapseSection: true
+#slug: Reliability
+#geekdocHidden: true
+#geekdocHiddenTocTree: true
+geekdocAlign: "left"
+---
 # Reliability Assessment - Availability Testing Strategy
 ![](./img/well-architected-hub.png)
 ## Question: How do you test your resiliency and availability strategies?

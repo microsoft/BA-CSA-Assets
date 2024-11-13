@@ -1,3 +1,12 @@
+---
+title: 06 How do you implement background jobs?
+weight: 1
+geekdocCollapseSection: true
+#slug: Reliability
+#geekdocHidden: true
+#geekdocHiddenTocTree: true
+geekdocAlign: "left"
+---
 # Reliability Assessment - Background and Async Jobs
 ![](./img/well-architected-hub.png)
 ## Question: How do you implement background jobs?

@@ -1,6 +1,6 @@
 ---
-title: Welcome to my sample repo!
-weight: 1
+title: Getting Started
+weight: 0
 ---
 
 ---

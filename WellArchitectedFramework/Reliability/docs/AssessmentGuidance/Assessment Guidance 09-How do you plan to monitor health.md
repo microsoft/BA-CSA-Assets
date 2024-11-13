@@ -1,3 +1,12 @@
+---
+title: 09 How do you plan to monitor health?
+weight: 1
+geekdocCollapseSection: true
+#slug: Reliability
+#geekdocHidden: true
+#geekdocHiddenTocTree: true
+geekdocAlign: "left"
+---
 # Reliability Assessment - Monitoring Health
 ![](./img/well-architected-hub.png)
 ## Question: How do you plan to monitor health?

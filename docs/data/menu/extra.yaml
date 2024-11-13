@@ -10,10 +10,10 @@ header:
   #   icon: gdoc_copy
   #   external: false
 
-  # - name: GitHub
-  #   ref: https://github.com/Azure/azure-monitor-baseline-alerts
-  #   icon: gdoc_github
-  #   external: true
+  - name: Service Offerings
+    ref: https://pfedynamics.wordpress.com/2023/09/26/power-platform-and-dynamics-365-service-offerings/
+    icon: gdoc_bookmark
+    external: true
 
   # - name: GitHub Issues
   #   ref: https://github.com/Azure/azure-monitor-baseline-alerts/issues

@@ -1,3 +1,12 @@
+---
+title: 04 How do you define reliability targets?
+weight: 1
+geekdocCollapseSection: true
+#slug: Reliability
+#geekdocHidden: true
+#geekdocHiddenTocTree: true
+geekdocAlign: "left"
+---
 # Reliability Assessment - Target Metrics
 ![](./img/well-architected-hub.png)
 ## Question: How do you define reliability targets?
