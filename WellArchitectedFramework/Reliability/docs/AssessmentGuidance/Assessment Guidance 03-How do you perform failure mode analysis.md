@@ -1,3 +1,12 @@
+---
+title: 03 How do you perform failure mode analysis?
+weight: 1
+geekdocCollapseSection: true
+#slug: Reliability
+#geekdocHidden: true
+#geekdocHiddenTocTree: true
+geekdocAlign: "left"
+---
 # Reliability Assessment - Failure Mode Analysis
 ![](./img/well-architected-hub.png)
 ## Question: How do you perform failure mode analysis?

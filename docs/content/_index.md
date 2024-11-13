@@ -1,5 +1,5 @@
 ---
-title: Welcome to my site!
+title: Welcome to CSA Assets!
 geekdocNav: false
 geekdocAlign: center
 geekdocAnchor: false

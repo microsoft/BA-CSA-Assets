@@ -1,3 +1,13 @@
+---
+title: 01 How do you keep the workload simple and efficient?
+weight: 1
+geekdocCollapseSection: true
+#slug: Reliability
+#geekdocHidden: true
+#geekdocHiddenTocTree: true
+geekdocAlign: "left"
+---
+{{< alertList name="alertList" >}}
 # Reliability Assessment - Concise and Simple Workflows
 ## Question: How do you keep the workload simple and efficient?
 

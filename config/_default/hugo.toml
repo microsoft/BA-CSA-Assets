@@ -10,6 +10,7 @@ pluralizeListTitles = false
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 disablePathToLower = false
+enableGitInfo = true
 
 # Required if you want to render robots.txt template
 enableRobotsTXT = true
@@ -52,10 +53,23 @@ enableRobotsTXT = true
     target = 'archetypes'
   [[module.mounts]]
     source = 'WellArchitectedFramework'
-    target = 'content'
+    target = 'content/waf'
     excludeFiles = ['**/_index.json']
-
+      [[module.mounts]]
+    source = 'Samples'
+    target = 'content/samples'
+    excludeFiles = ['**/_index.json']
+      [[module.mounts]]
+    source = 'WellArchitectedFramework'
+    target = 'data'
+    includeFiles = ['**/alerts.yaml']
+    
 [params]
-  geekdocToC = 3
+  ambaDevMode = true
+  geekdocToC = 4
   geekdocFileTreeSortBy = "title"
+  geekdocTagsToMenu = true
+  geekdocRepo = "https://github.com/microsoft/BA-CSA-Assets"
+  #geekdocMenuBundle = true
+  geekdocHidden = true
 

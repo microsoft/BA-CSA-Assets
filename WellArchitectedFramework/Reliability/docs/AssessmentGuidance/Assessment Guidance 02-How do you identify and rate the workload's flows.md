@@ -1,3 +1,12 @@
+---
+title: 02 How do you identify and rate the workload's flows?
+weight: 1
+geekdocCollapseSection: true
+#slug: Reliability
+#geekdocHidden: true
+#geekdocHiddenTocTree: true
+geekdocAlign: "left"
+---
 # Reliability Assessment - Assess Workflows
 ## Question: How do you identify and rate the workload's flows?
 

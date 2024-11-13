@@ -1,0 +1,16 @@
+---
+more:
+  - name: ESI Learning
+    ref: "https://esi.microsoft.com/landing"
+    external: true
+    #icon: "gdoc_notification"
+  - name: Service Offerings
+    ref: "https://pfedynamics.wordpress.com/2023/09/26/power-platform-and-dynamics-365-service-offerings/"
+    external: true
+    sub:
+      - name: Dynamics 365 F&SCM
+        ref: "https://pfedynamics.wordpress.com/2024/04/02/dynamics-365-finance-supply-chain-management-scm-service-offerings/"
+        external: true
+      - name: Dynamics 365 CE
+        ref: "https://pfedynamics.wordpress.com/2023/09/26/power-platform-and-dynamics-365-service-offerings/"
+        external: true
