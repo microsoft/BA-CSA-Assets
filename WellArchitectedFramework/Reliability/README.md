@@ -1,3 +1,7 @@
+---
+title: Start Here
+weight: 0
+---
 # Summary
 This repository focuses on business applications built by organizations upon the Power Platform. It encompasses best practices learned and crafted by experts in the field.
 

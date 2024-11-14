@@ -1,3 +1,6 @@
+---
+title: In-App Notifications Setup and Broadcast Use Cases
+---
 # In-App Notifications Setup and Broadcast Use Cases
 
 ## Summary

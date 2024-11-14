@@ -1,3 +1,6 @@
+---
+title: Client API and Side Panes
+---
 # Client API and Side Panes
 
 ## Summary
