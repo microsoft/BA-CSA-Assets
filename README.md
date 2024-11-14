@@ -1,4 +1,6 @@
 # Summary
+This repo is now a website! It can be found here: https://microsoft.github.io/BA-CSA-Assets/welcome/
+
 
 This repository contains public available samples and workshops from Microsoft Business Applications Cloud Solution Architects (CSAs) as well as other experts in the field. It serves as a resource for developers to explore and learn from real-world scenarios and best practices.
 

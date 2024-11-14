@@ -1,3 +1,6 @@
+---
+title: Run PowerApps Checker on All Solutions
+---
 # Run PowerApps Checker on All Solutions
 Designed to download all unmanaged solutions (avoiding default) and run PowerApps checker. Provided as-is.
 

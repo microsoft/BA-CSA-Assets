@@ -1,5 +1,5 @@
 baseURL = "http://localhost"
-title = "CSA Assets"
+title = "Power Platform & Dynamics 365 Cloud Solution Architect Assets"
 theme = "hugo-geekdoc"
 themesDir = "docs/themes"
 
@@ -72,4 +72,5 @@ enableRobotsTXT = true
   geekdocRepo = "https://github.com/microsoft/BA-CSA-Assets"
   #geekdocMenuBundle = true
   geekdocHidden = true
+    geekdocLogo = "img/PowerPlatform_scalable.png"
 
