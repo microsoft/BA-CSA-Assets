@@ -1,5 +1,6 @@
 ---
 title: In-App Notifications Setup and Broadcast Use Cases
+geekdocDescription: test
 ---
 # In-App Notifications Setup and Broadcast Use Cases
 
