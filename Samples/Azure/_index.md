@@ -6,4 +6,4 @@ geekdocCollapseSection: true
 
 {{< toc-tree >}}
 
-Welcome to the Well-Architected Framework
+Welcome to the Azure Sample repo!
