@@ -17,7 +17,11 @@ We are always interested and willing to help the community! Please use the Issue
 
 # Author Directory
 
+[Ali Youssefi YouTube](http://www.youtube.com/@aliyoussefi9204)
+
 [Laurens Vandendriessche Substack](https://lavandensway.substack.com/)
+
+[Suparna Tech Basket](https://suparnatechbasket.wordpress.com/)
 
 [Microsoft Power Platform CE Blogs](https://github.com/microsoft-power-platform-ce/blogs)
 
