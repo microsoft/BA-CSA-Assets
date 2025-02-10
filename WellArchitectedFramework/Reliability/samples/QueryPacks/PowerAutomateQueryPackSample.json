@@ -1,0 +1,97 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "querypacks_Power_Automate_Resiliency_Query_Pack_name": {
+            "defaultValue": "Power Automate Resiliency Query Pack",
+            "type": "String"
+        },
+        "querypacks_Power_Automate_Resiliency_Query_Pack_location": {
+            "defaultValue": "",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.OperationalInsights/querypacks",
+            "apiVersion": "2023-09-01",
+            "name": "[parameters('querypacks_Power_Automate_Resiliency_Query_Pack_name')]",
+            "location": "[parameters('querypacks_Power_Automate_Resiliency_Query_Pack_location')]",
+            "properties": {}
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2023-09-01",
+            "name": "[concat(parameters('querypacks_Power_Automate_Resiliency_Query_Pack_name'), '/385d520b-829b-4df0-aec0-b3d98b7f5c93')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_Power_Automate_Resiliency_Query_Pack_name'))]"
+            ],
+            "properties": {
+                "displayName": "Display cloud flow run with dependencies",
+                "description": "Display cloud flow with all actions. Include timestamps, duration, action status.",
+                "body": "// Author: aliyoussefi\r\n// Display name: Display cloud flow run with dependencies\r\n// Description: Display cloud flow with all actions. Include timestamps, duration, action status.\r\n// Categories: General\r\n// Resource types: Power Automate\r\n// Topic:  Troubleshooting\r\nlet _runId = \"\";\r\ndependencies\r\n| extend data = todynamic(tostring(customDimensions.Data))\r\n| extend tags = todynamic(tostring(customDimensions.tags))\r\n| where data.RunId == _runId\r\n| order by timestamp asc\r\n| project timestamp, name, data.actionType,duration, [\"Status\"] = data.status, [\"Client tracking ID\"] = operation_ParentId, [\"Action tracking ID\"] = operation_Id,  tags.xrmWorkflowId",
+                "related": {
+                    "categories": [],
+                    "resourceTypes": [
+                        "microsoft.insights/components"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "Power Automate"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2023-09-01",
+            "name": "[concat(parameters('querypacks_Power_Automate_Resiliency_Query_Pack_name'), '/8284c529-b648-4ebf-a52e-9f96eb2f33ff')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_Power_Automate_Resiliency_Query_Pack_name'))]"
+            ],
+            "properties": {
+                "displayName": "Display cloud flow runs with grouped by statuses",
+                "description": "Summary of Power Automate flow runs grouped into total runs, success and failures over timespan.",
+                "body": "// Author: Alok Sriwastaw\r\n// Display name: Display cloud flow runs with grouped by statuses\r\n// Description: Summary of Power Automate flow runs grouped into total runs, success and failures over timespan.\r\n// Categories: General\r\n// Resource types: Power Automate\r\n// Topic:  Usage Analytics\r\nrequests\r\n| extend cd = parse_json(customDimensions)\r\n| where cd.resourceProvider has \"Cloud Flow\"\r\n| extend data = parse_json(tostring(cd.Data))\r\n| extend FlowName = tostring(data.FlowDisplayName)\r\n|summarize nRun = count(), nFailed = countif(success==false) by FlowName\r\n| extend nSuccess = nRun-toint(nFailed)\r\n| project FlowName, nRun,nSuccess,nFailed\r\n| order by toint(nRun) desc",
+                "related": {
+                    "categories": [],
+                    "resourceTypes": [
+                        "microsoft.insights/components"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "Power Automate"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2023-09-01",
+            "name": "[concat(parameters('querypacks_Power_Automate_Resiliency_Query_Pack_name'), '/b22472c8-5f0a-421e-a8ca-c5e530b74e1e')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_Power_Automate_Resiliency_Query_Pack_name'))]"
+            ],
+            "properties": {
+                "displayName": "Display unsuccessful cloud flow runs with direct link",
+                "description": "Display unsuccessful cloud flow runs with a direct link to the cloud flow run for troubleshooting",
+                "body": "// Author: aliyoussefi\r\n// Display name: Display unsuccessful cloud flow runs with direct link\r\n// Description: Display unsuccessful cloud flow runs with a direct link to the cloud flow run for troubleshooting\r\n// Categories: Resiliency\r\n// Resource types: Power Automate\r\n// Topic:  Troubleshooting\r\ndependencies \r\n| where success == false\r\n| extend error = todynamic(tostring(customDimensions.error))\r\n| extend tags = todynamic(tostring(customDimensions.tags))\r\n| project \r\n    timestamp, \r\n    target, \r\n    operation_Id, \r\n    operation_ParentId, \r\n    name, \r\n    error.code, \r\n    error.message, \r\n    customDimensions.signalCategory,\r\n    tags.capabilities,\r\n    tags.environmentName,\r\n    directlink=strcat(\"https://make.powerautomate.com/environments/\", tags.environmentName, \"/flows/\",  target, \"/runs/\", operation_ParentId)\r\n\r\n    ",
+                "related": {
+                    "categories": [],
+                    "resourceTypes": [
+                        "microsoft.insights/components"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "Power Automate",
+                        "Resiliency"
+                    ]
+                }
+            }
+        }
+    ]
+}

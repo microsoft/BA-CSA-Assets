@@ -9,6 +9,7 @@ geekdocAlign: "left"
 ---
 {{< alertList name="alertList" >}}
 # Reliability Assessment - Concise and Simple Workflows
+
 ## Question: How do you keep the workload simple and efficient?
 
 A key tenet of designing for reliability is to keep your workload simple and efficient. Focus your workload design on meeting business requirements to reduce the risk of unnecessary complexity or excess overhead. Various workloads might have different requirements for availability, scalability, data consistency, and disaster recovery.

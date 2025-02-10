@@ -1,0 +1,50 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "workspaceName": {
+        "type": "string"
+      },
+      "location": {
+        "type": "string"
+      }
+    },
+    "resources": [
+      {
+        "type": "Microsoft.OperationalInsights/workspaces",
+        "apiVersion": "2021-12-01-preview",
+        "name": "[parameters('workspaceName')]",
+        "location": "[parameters('location')]"
+      },
+      {
+        "type": "Microsoft.OperationalInsights/workspaces/savedSearches",
+        "apiVersion": "2020-08-01",
+        "name": "[format('{0}/{1}', parameters('workspaceName'), 'Parameterized function')]",
+        "properties": {
+          "etag": "*",
+          "displayName": "Unavailable computers function",
+          "category": "Samples",
+          "functionAlias": "UnavailableComputers",
+          "functionParameters": "argSpan: timespan",
+          "query": " Heartbeat | summarize LastHeartbeat=max(TimeGenerated) by Computer| where LastHeartbeat < ago(argSpan)"
+        },
+        "dependsOn": [
+          "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+        ]
+      },
+      {
+        "type": "Microsoft.OperationalInsights/workspaces/savedSearches",
+        "apiVersion": "2020-08-01",
+        "name": "[format('{0}/{1}', parameters('workspaceName'), 'Query using function')]",
+        "properties": {
+          "etag": "*",
+          "displayName": "Unavailable computers",
+          "category": "Samples",
+          "query": "UnavailableComputers(7days)"
+        },
+        "dependsOn": [
+          "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+        ]
+      }
+    ]
+  }

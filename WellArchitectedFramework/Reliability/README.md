@@ -69,3 +69,8 @@ Review the artifacts contained in this repository. Review the self paced trainin
 [Failure Mode Analysis for Mission Critical Applications Template](./docs/Failure%20Mode%20Analysis%20for%20Mission%20Critical%20Applications.docx)
 
 [Business Criticality Template](./docs/Application%20Criticality%20Template.docx)
+
+## Deployable Azure Artifacts
+### Power Automate Resiliency Query Pack
+<input id="inputSubscription"></input>
+<button onclick="window.location.href='https://www.example.com';">test</button>
