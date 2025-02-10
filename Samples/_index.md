@@ -13,7 +13,7 @@ Each directory owner is responsible for the contents within each asset repositor
 
 # Have an Idea?
 
-We are always interested and willing to help the community! Please use the Issues tab above to provide feedback on samples, gaps or any questions you have!
+We are always interested and willing to help the community! Please use [the Issues link](https://github.com/microsoft/BA-CSA-Assets/issues) to provide feedback on samples, gaps or any questions you have!
 
 # Official Service Offerings
 [Power Platform and Dynamics 365 CE Service Offerings](https://pfedynamics.wordpress.com/2023/09/26/power-platform-and-dynamics-365-service-offerings/)
@@ -21,6 +21,8 @@ We are always interested and willing to help the community! Please use the Issue
 [Dynamics 365 FO Service Offerings](https://pfedynamics.wordpress.com/2024/04/02/dynamics-365-finance-supply-chain-management-scm-service-offerings/)
 
 # Author Directory
+
+[Ali Youssefi YouTube](http://www.youtube.com/@aliyoussefi9204)
 
 [Laurens Vandendriessche Substack](https://lavandensway.substack.com/)
 
