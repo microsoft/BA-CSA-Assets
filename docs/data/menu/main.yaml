@@ -6,6 +6,10 @@ main:
     sub:
       - name: Reliability
         ref: "Reliability"
+        sub:
+          - name: Assessment Guidance
+            ref: ../docs/AssessmentGuidance
+            anchor: anchor
       - name: Level 1.2
         ref: "/level-1/level-1-2"
       - name: Level 1.3

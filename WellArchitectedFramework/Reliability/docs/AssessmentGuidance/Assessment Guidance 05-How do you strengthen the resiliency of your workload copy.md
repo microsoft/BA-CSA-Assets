@@ -1,6 +1,6 @@
 ---
 title: 05 How do you strengthen the resiliency of your workload?
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 #slug: Reliability
 #geekdocHidden: true

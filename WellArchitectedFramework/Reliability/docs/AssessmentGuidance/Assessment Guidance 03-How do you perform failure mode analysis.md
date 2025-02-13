@@ -1,6 +1,6 @@
 ---
 title: 03 How do you perform failure mode analysis?
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 #slug: Reliability
 #geekdocHidden: true

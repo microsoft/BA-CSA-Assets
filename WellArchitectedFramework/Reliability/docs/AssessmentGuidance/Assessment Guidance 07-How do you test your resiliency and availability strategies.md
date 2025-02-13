@@ -1,6 +1,6 @@
 ---
 title: 07 How do you test your resiliency and availability strategies?
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 #slug: Reliability
 #geekdocHidden: true

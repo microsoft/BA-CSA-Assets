@@ -17,3 +17,23 @@
     threshold: 90.0
     autoMitigate: false
   guid: ea6a4d59-822f-4fb7-a29d-69e523e95bdb
+
+- name: PowerAutomateAnalyticsRunsWorkbook
+  description: Microsoft Power Automate Analytics Runs Workbook
+  type: Workbook
+  verified: false
+  visible: false
+  tags:
+  - csa-assets
+  properties:
+    #metricName: pa_metrics_longrunningactions
+    #metricNamespace: microsoft.insights/components
+    #severity: 3
+    #windowSize: PT5M
+    #evaluationFrequency: PT1M
+    #timeAggregation: Average
+    #operator: GreaterThan
+    #criterionType: StaticThresholdCriterion
+    #threshold: 90.0
+    #autoMitigate: false
+  guid: a86b4598-22b0-4ee2-bf79-ce2e28eae9b4

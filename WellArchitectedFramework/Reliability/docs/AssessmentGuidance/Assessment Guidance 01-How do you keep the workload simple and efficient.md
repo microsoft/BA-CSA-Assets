@@ -1,6 +1,6 @@
 ---
 title: 01 How do you keep the workload simple and efficient?
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 #slug: Reliability
 #geekdocHidden: true

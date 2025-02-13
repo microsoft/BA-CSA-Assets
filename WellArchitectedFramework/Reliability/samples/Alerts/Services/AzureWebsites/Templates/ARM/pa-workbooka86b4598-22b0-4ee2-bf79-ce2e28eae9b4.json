@@ -1,0 +1,165 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "alertName": {
+            "minLength": 1,
+            "type": "String",
+            "metadata": {
+                "description": "Name of the alert"
+            }
+        },
+        "alertDescription": {
+            "defaultValue": "The CPU Percentage threshold for Standard and Premium functions.",
+            "type": "String",
+            "metadata": {
+                "description": "Description of alert"
+            }
+        },
+        "targetResourceId": {
+            "minLength": 1,
+            "type": "String",
+            "metadata": {
+                "description": "List of Azure resource Ids seperated by a comma. For example - /subscriptions/00000000-0000-0000-0000-0000-00000000/resourceGroup/resource-group-name/Microsoft.compute/virtualMachines/vm-name"
+            }
+        },
+        "targetResourceRegion": {
+            "type": "String",
+            "metadata": {
+                "description": "Azure region in which target resources to be monitored are in (without spaces). For example: EastUS"
+            }
+        },
+        "targetResourceType": {
+            "minLength": 1,
+            "type": "String",
+            "metadata": {
+                "description": "Resource type of target resources to be monitored."
+            }
+        },
+        "isEnabled": {
+            "defaultValue": true,
+            "type": "Bool",
+            "metadata": {
+                "description": "Specifies whether the alert is enabled"
+            }
+        },
+        "alertSeverity": {
+            "defaultValue": 3,
+            "allowedValues": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "type": "Int",
+            "metadata": {
+                "description": "Severity of alert {0,1,2,3,4}"
+            }
+        },
+        "operator": {
+            "defaultValue": "GreaterThan",
+            "allowedValues": [
+                "Equals",
+                "GreaterThan",
+                "GreaterThanOrEqual",
+                "LessThan",
+                "LessThanOrEqual"
+            ],
+            "type": "String",
+            "metadata": {
+                "description": "Operator comparing the current value with the threshold value."
+            }
+        },
+        "threshold": {
+            "defaultValue": "120",
+            "type": "String",
+            "metadata": {
+                "description": "The threshold value at which the alert is activated."
+            }
+        },
+        "timeAggregation": {
+            "defaultValue": "Total",
+            "allowedValues": [
+                "Average",
+                "Minimum",
+                "Maximum",
+                "Total",
+                "Count"
+            ],
+            "type": "String",
+            "metadata": {
+                "description": "How the data that is collected should be combined over time."
+            }
+        },
+        "windowSize": {
+            "defaultValue": "PT5M",
+            "allowedValues": [
+                "PT1M",
+                "PT5M",
+                "PT15M",
+                "PT30M",
+                "PT1H",
+                "PT6H",
+                "PT12H",
+                "PT24H",
+                "PT1D"
+            ],
+            "type": "String",
+            "metadata": {
+                "description": "Period of time used to monitor alert activity based on the threshold. Must be between one minute and one day. ISO 8601 duration format."
+            }
+        },
+        "evaluationFrequency": {
+            "defaultValue": "PT1M",
+            "allowedValues": [
+                "PT1M",
+                "PT5M",
+                "PT15M",
+                "PT30M",
+                "PT1H"
+            ],
+            "type": "String",
+            "metadata": {
+                "description": "how often the metric alert is evaluated represented in ISO 8601 duration format"
+            }
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "microsoft.insights/metricAlerts",
+            "apiVersion": "2018-03-01",
+            "name": "[parameters('alertName')]",
+            "location": "global",
+            "tags": {
+                "_deployed_by_ppmba": true
+            },
+            "properties": {
+                "severity": "[parameters('alertSeverity')]",
+                "enabled": true,
+                "scopes": [
+                    "[parameters('targetResourceId')]"
+                ],
+                "evaluationFrequency": "PT5M",
+                "windowSize": "PT5M",
+                "criteria": {
+                    "allOf": [
+                        {
+                            "threshold": "[parameters('threshold')]",
+                            "name": "Metric1",
+                            "metricNamespace": "microsoft.insights/components",
+                            "metricName": "performanceCounters/processCpuPercentage",
+                            "operator": "[parameters('operator')]",
+                            "timeAggregation": "[parameters('timeAggregation')]",
+                            "criterionType": "StaticThresholdCriterion"
+                        }
+                    ],
+                    "odata.type": "Microsoft.Azure.Monitor.SingleResourceMultipleMetricCriteria"
+                },
+                "targetResourceType": "microsoft.insights/components",
+                "targetResourceRegion": "[parameters('targetResourceRegion')]"
+            }
+        }
+    ]
+}

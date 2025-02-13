@@ -1,5 +1,5 @@
 ---
-title: Power Automate
+title: Power Automate Alerts
 weight: 5
 geekdocCollapseSection: true
 slug: Reliability
@@ -7,6 +7,9 @@ slug: Reliability
 #geekdocHiddenTocTree: true
 geekdocAlign: "left"
 ---
+
+# How To Use
+Use these alerts directly in your Azure Subscription. They require the enablement of [Application Insights for Power Automate](https://learn.microsoft.com/en-us/power-platform/admin/app-insights-cloud-flow). Once enabled, clicking the buttons below will direct you to the Azure Portal to create alerts automatically.
 
 {{< alertList name="alertList" >}}
 <script>
