@@ -1,6 +1,6 @@
 ---
 title: 09 How do you plan to monitor health?
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 #slug: Reliability
 #geekdocHidden: true

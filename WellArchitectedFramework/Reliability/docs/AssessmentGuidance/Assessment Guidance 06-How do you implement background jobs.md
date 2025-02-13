@@ -1,6 +1,6 @@
 ---
 title: 06 How do you implement background jobs?
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 #slug: Reliability
 #geekdocHidden: true

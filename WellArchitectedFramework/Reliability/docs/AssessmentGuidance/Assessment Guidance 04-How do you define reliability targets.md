@@ -1,6 +1,6 @@
 ---
 title: 04 How do you define reliability targets?
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 #slug: Reliability
 #geekdocHidden: true

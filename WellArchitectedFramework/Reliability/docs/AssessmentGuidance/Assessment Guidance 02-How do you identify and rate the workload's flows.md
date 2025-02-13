@@ -1,6 +1,6 @@
 ---
 title: 02 How do you identify and rate the workload's flows?
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 #slug: Reliability
 #geekdocHidden: true

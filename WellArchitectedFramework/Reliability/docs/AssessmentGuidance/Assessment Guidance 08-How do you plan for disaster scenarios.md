@@ -1,6 +1,6 @@
 ---
 title: 08 How do you plan for disaster scenarios?
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 #slug: Reliability
 #geekdocHidden: true
