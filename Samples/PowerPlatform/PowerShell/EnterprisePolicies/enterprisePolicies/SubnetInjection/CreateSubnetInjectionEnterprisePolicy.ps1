@@ -56,17 +56,9 @@ function CreateSubnetInjectionEnterprisePolicy
 
     )
 
-#$subscriptionId = "175cd2eb-fac9-40e5-856d-77179edacdb8"
-#$resourceGroup = "RG-PrivateVNet-BAE"
-#$enterprisePolicyName = "VNet-BAE-Dev-EUS"
-#$enterprisePolicylocation = "unitedstates"
-#$primaryVnetId = "/subscriptions/175cd2eb-fac9-40e5-856d-77179edacdb8/resourcegroups/RG-PrivateVNet-BAE/providers/Microsoft.Network/virtualNetworks/VNet-BAE-Dev-EUS"
-#$primarySubnetName = "default"
-#$secondaryVnetId = "/subscriptions/175cd2eb-fac9-40e5-856d-77179edacdb8/resourcegroups/RG-PrivateVNet-BAE/providers/Microsoft.Network/virtualNetworks/VNet-BAE-Dev-WUS"
-#$secondarySubnetName = "Subnet-Secondary"
 
     Write-Host "Logging In..." -ForegroundColor Green
-    $connect = AzureLogin
+    $connect = AzureLogin -subscription $subscriptionId
     Connect-AzAccount -Subscription $subscriptionId
     if ($false -eq $connect)
     {

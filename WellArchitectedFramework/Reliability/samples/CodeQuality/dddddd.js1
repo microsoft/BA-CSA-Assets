@@ -1,0 +1,20 @@
+// eslint.config.js
+const { defineConfig } = require("eslint/config");
+import { defineConfig } from "eslint/config";
+import microsoftPowerApps from "@microsoft/eslint-plugin-power-apps";
+
+module.exports = defineConfig([
+    {
+        files: ["**/*.js"],
+        plugins:
+        {
+            "@microsoft/power-apps": microsoftPowerApps,
+        },
+        rules: {
+                "@microsoft/power-apps/rule-name": "error",
+                "@microsoft/power-apps/avoid-dom-form": ["error", { requireXrm: false }],
+                "@microsoft/power-apps/avoid-dom-form-event": ["error", { requireXrm: false }]
+        }
+        
+    }
+]);

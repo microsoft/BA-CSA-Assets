@@ -10,6 +10,10 @@ function NewSubnetInjection
 
         [Parameter(Mandatory=$true)]
         [ValidateNotNullOrEmpty()]
+        [String]$subscriptionId,
+
+        [Parameter(Mandatory=$true)]
+        [ValidateNotNullOrEmpty()]
         [String]$policyArmId,
 
         [Parameter(Mandatory=$false)]
@@ -21,6 +25,6 @@ function NewSubnetInjection
     if (![bool]$endpoint) {
         $endpoint = "prod"
     }
-    LinkPolicyToEnv -policyType vnet -environmentId $environmentId -policyArmId $policyArmId -endpoint $endpoint 
+    LinkPolicyToEnv -policyType vnet -environmentId $environmentId -policyArmId $policyArmId -endpoint $endpoint -subscriptionId $subscriptionId
 }
 NewSubnetInjection
